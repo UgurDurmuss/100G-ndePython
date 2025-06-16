@@ -73,8 +73,9 @@ tk.Button(window,text="9",width=5,command=lambda:write("9")).grid(row=3,column=1
 tk.Button(window,text="0",width=5,command=lambda:write("0")).grid(row=3,column=2,padx=2,pady=2)
 tk.Button(window,text="*",width=5,command=lambda:choose_operator("*")).grid(row=3,column=3,padx=2,pady=2)
 tk.Button(window,text="/",width=5,command=lambda:choose_operator("/")).grid(row=4,column=3,padx=2,pady=2)
-tk.Button(window,text="delete",width=5,command=lambda:delete()).grid(row=5,column=3,padx=2,pady=2)
 tk.Button(window,text="=",width=5,command=lambda:calculate()).grid(row=5,column=3,padx=2,pady=2)
+myButton=tk.Button(window,text="delete",command=lambda:delete())
+myButton.grid(row=6,column=7,padx=30,pady=40)
 
 window.mainloop()#pencerenin kapanmasını önlemek için
 
