@@ -2,7 +2,7 @@
 
 
 import tkinter as tk
-
+import json
 from tkinter import PhotoImage#görsel çekmek için kullandığmız kütüphane
 
 
@@ -46,7 +46,6 @@ except Exception as e:#hatayı alır e değişkenine atar
     label.pack()
 
 title_label=tk.Label(text="Enter your title",font=("Arial", 10), fg="black", bg="light grey")#renk,boyut,yazı tipi
-title=title_label
 title_label.pack()
 
 title_entry=tk.Entry(width=20)
@@ -65,14 +64,15 @@ master_key_input=tk.Entry(width=20)
 master_key_input.pack()
 
 def save():
-    metin=input_text.get("1",tk.END)#sen az önce get leri pencere açıkken almaya çalıştın bu değeri girildiği gibi almaya ve boş değer döndürmene sebep olur
+    metin=input_text.get("1.0",tk.END)#sen az önce get leri pencere açıkken almaya çalıştın bu değeri girildiği gibi almaya ve boş değer döndürmene sebep olur
     my_key=master_key_input.get()
     sifreli=save_and_encrypt(my_key,metin)
+    title_text=title_entry.get()
+    with open(title_text,"w") as dosya:#title başlıklı bir dosya oluşturduk
+        json.dump(sifreli,dosya)
     input_text.delete("1.0",tk.END)
-    input_text.insert("1.0",sifreli)
-    master_key_input.delete("1.0",tk.END)
 def encrypt():
-    metin = input_text.get("1",tk.END)
+    metin = input_text.get("1.0",tk.END)
     my_key = master_key_input.get()
     sifresiz=decrypt_notes(my_key,metin)
     input_text.delete("1.0", tk.END)
@@ -86,3 +86,6 @@ save_button.pack()
 decrypt_button=tk.Button(text="Decrypt",command=encrypt)
 decrypt_button.pack()
 window.mainloop()
+
+
+
