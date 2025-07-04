@@ -1,0 +1,202 @@
+<html lang="en"><!--dil kategorisi translate için önemli-->
+<head><!--bu kısım kullanıcının görmediği veri web uygulaması hakkındaki veri kısmıdır-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><!--sayfanın ismi olur-->
+</head>
+    <body><!--bu kısım ise kullanıcının gördüğü kısımdır-->
+         <h1>heading 1</h1><!--başlık olarak kullanılır heading 6 ya kadar gidilebilir ve gittikçe başlık küçülür-->
+          <br><!--boşluk brakmak için-->
+         <h2>heading2</h2>
+         <p>hi! there</p><!--Metin yazmak için -->
+    </body>
+</html>
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--unoredered list-->
+  <ul>
+    <li>undordered list 1</li>
+    <li>undordered list 2</li>
+    <li>undordered list 3</li>
+    <li>undordered list 4</li>
+   <ul>
+    <br>
+    <br>
+    <!--ordered list-->
+    <ol>
+       <li>ordered list 1</li>
+       <li>ordered list 2</li>
+       <li>ordered list 3</li>
+       <li>ordered list 4</li>  
+    </ol>
+    <h1>piton</h1>
+    <ol><!--bunun aracılığı ile bir liste başlığı açtık-->
+       <li>Variables</li><!--başlıkların isimleri-->
+       <ul><!--alt başlıklara başladık-->
+        <li>integer</li><!--alt başlık isimleri-->
+        <li>float</li>
+       </ul>
+        <li>collections</li>
+        <ul>
+            <li>dictionaries<li>
+            <li>array</li>
+            <li>set</li>
+            <li>tuple</li>
+        </ul>
+        <li>loops<li>
+             <ul>
+                 <li>for loop</li>
+                 <li>while loop</li>
+             </ul>
+    </ol>
+</body>
+</html>
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dive and Span Html</title>
+</head>
+<body>
+    <div><!--divler belli bir ksımı açıp orayı düzenlemekte kullanılır,çeşitli parametlere sahip-->
+        <p>uğur</p>
+        <span style="color: blueviolet;"><!--spanlar ise divler altında list içinde list mantığı ile çaılışır-->
+            <p>can</p>
+            <p>html</p>
+        </span>
+    </div>
+    <br>
+    
+    <div style="color: rgb(198, 198, 30);">
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+        </ul>
+
+    </div>
+</body>
+</html>
+
+
+     
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İmages</title>
+</head>
+<body>
+    <!--anchor tag-->
+    <a href="https://www.google.com"><h1>Enter</h1></a><!--bir metne link atamak istersek-->
+    <br>
+    <a href="exam.html">Html list</a><!--daha önce yaptığımız projelerede referans verebiliyouz-->
+    <h1>Thanos</h1>
+    <br>
+    <img src="images/thanos.jpg" alt="Thanos"><!--src alacağımız görselin kaynağı,bu proje klasörümüzde ek olarak oluşturduğumuzda bir klasörde bulunan görsel,adreste olabilir-->
+</body>
+</html>
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <table border="1"> 
+        <!--Table head-->
+        <thead>   <!--bunlar başlık kısımları,theadla açtık-->
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Departmen</th>
+            <th>Age</th>
+        </thead>
+        <!--table row-->
+        <tr>  <!--burasıda her başlığa denk gelen değerler-->
+            <td>Uğur</td>
+            <td>100</td>
+            <td>Student</td>
+            <td>21</td>
+        </tr>
+
+        <tr>
+            <td>fero</td>
+            <td>23</td>
+            <td>Worker</td>
+            <td>35</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+<form action="image.html"> <!--formda doldurulan bilgilerin onaylanması halinde bize geri dönecek veri-->
+  <label for="name">Name:</label> <!--label sayesinde alacağımız bilginin gerçekten istediğimiz o bilgi olduğunu garantileriz,bir name etiketi oluşturduk-->
+  <input type="text" id="name" name="name"> <!--input ile veriyi alirız ,labeli  buraya id olarak yapıştırız,son kısımdaki name sayesinde,adreste istediğimiz isim görünür-->
+  <br>
+  <label for="salary">Salary</label>
+  <input type="text" id="salary" name="salary">
+  <br>
+  <input type="submit">
+</form>
+
+<br><br><br>
+
+  <form action="image.html"> 
+  <label for="email">Email:</label><!--label ile kullandığımız parametre sayesinde kullanıcının gerçek bir e posta girmesini zorladık-->
+  <input type="text" id="email" name="email" placeholder="Enter your email"><!--placeholder sayesinde input kutucuklarının içerisine bir şey yazınca silinen metinler ekledik  -->
+  <br> 
+  <label for="passw">Passw</label>
+  <input type="text" id="passw" name="passw" placeholder="Enter your password">
+  <br>
+  <input type="submit" value="login"> <!--onayla kutucuğumuzun ismini value kullanarak değiştirebiliyoruz-->
+</form>
+
+<br><br><br>
+
+<form action="DivSpan.html">
+        <p>Star Wars vs. Star Trek?</p>
+
+        <label for="starwars">Starwars: </label>
+       <input type="radio" id="starwars" name="movie" value="starwars">
+       <!--type radio yaparak seçme kutucukları oluşturduk,aynı anda iki kutucuğuda işaretlememek için value leri farklı isimlendirdik-->
+       <br>
+       <label for="startrek">Startrek:</label>
+       <input type="radio" id="startrek" name="movie" value="startrek"> 
+       <br>
+       <input type="submit" value="Choose">
+    </form>
+    <br><br><br>
+
+    <form action="htmllist.html">
+        <p>Rate your driver!</p>
+        <select name="rating" id="rating">
+            <!--oylama kutucukları-->
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+        </select>
+
+        <br>
+        <input type="submit" value="Choose">
+    </form>
+
+
+</body>
+</html>
