@@ -57,3 +57,45 @@ h4 {
 .seconddiv {
     background-color: crimson;
 }
+
+<!-----------------------!>
+
+/* Tüm sayfa (body) için yazı tipi olarak 'Pacifico' fontu seçilir */
+/* Eğer bu font yüklenmediyse varsayılan font gösterilir */
+body {
+    font-family: Pacifico;
+}
+
+/* Tüm <h1> başlıklarında yazı tipi 'Franklin Gothic Medium' yapılır */
+/* Ayrıca bu başlıklar yatayda ortalanır */
+h1 {
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+
+/* Tüm <p> (paragraf) etiketleri ortalanır ve yazı boyutu %150 oranında büyütülür */
+/* % birimi, tarayıcıdaki varsayılan yazı boyutuna göre hesaplanır (genellikle 16px) */
+p {
+    text-align: center;
+    font-size: 150%;
+}
+
+/* id'si "atil" olan öğeye uygulanır */
+/* Noktalı bir (dotted) 7px kalınlığında siyah kenarlık çizilir */
+/* Üstten 30px iç boşluk (padding) eklenir */
+/* Dış boşluk (margin) her yönden 30px olacak şekilde verilir */
+#atil {
+    border: 7px dotted black;
+    padding-top: 30px;
+    margin: 30px;
+}
+
+/* id'si "atlas" olan öğeye uygulanır */
+/* Düz çizgili (solid) 7px kalınlığında mor kenarlık çizilir */
+/* Tüm kenarlardan 100px dış boşluk (margin) bırakılır */
+#atlas {
+    border: 7px solid purple;
+    margin: 100px;
+}
+
+
