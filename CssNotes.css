@@ -1,0 +1,59 @@
+/* h2 başlık etiketlerinin yazı rengi crimson (koyu kırmızı), arka plan rengi siyah yapılır */
+h2 {
+    color: crimson;
+    background-color: black;
+}
+
+/* h3 başlık etiketlerinin yazı rengi blueviolet (mor tonlarında bir renk) yapılır */
+h3 {
+    color: blueviolet;
+}
+
+/* p (paragraf) etiketlerinin yazı rengi chocolate (kahverengi tonu) yapılır */
+p {
+    color: chocolate;
+}
+
+/* class'ı "firstdiv" olan div elemanlarının arka plan rengi chartreuse (fosforlu yeşil) yapılır */
+/* Not: ".firstdiv" bir **class seçicidir** ve HTML'de <div class="firstdiv"> şeklinde uygulanır */
+.firstdiv {
+    background-color: chartreuse;
+}
+
+/* id'si "myparagraph" olan elemanın (muhtemelen bir paragraf) yazı rengi siyah yapılır */
+/* Not: "#myparagraph" bir **id seçicidir** ve HTML'de <p id="myparagraph"> şeklinde uygulanır */
+#myparagraph {
+    color: black;
+}
+
+/* Tüm <div> etiketlerinin arka plan rengi siyah yapılır */
+/* Bu kural tüm div'leri etkiler ama daha spesifik class veya id seçiciler bunu override (geçersiz) edebilir */
+div {   
+    background-color: black;
+}
+
+/* Tüm <span> etiketlerinin arka plan rengi royalblue (canlı mavi) yapılır */
+span {
+    background-color: royalblue;
+}
+
+/* Tüm <h1> başlıklarının yazı rengi beyaz yapılır */
+h1 {
+    color: white;
+}
+
+/* Tüm <h4> başlıklarının yazı rengi aliceblue (çok açık mavi-beyaz tonları) yapılır */
+h4 {
+    color: aliceblue;
+}
+
+/* id'si "secondparagraph" olan paragrafın yazı rengi aliceblue yapılır */
+#secondparagraph {
+    color: aliceblue;
+}
+
+/* class'ı "seconddiv" olan div etiketinin arka plan rengi crimson yapılır */
+/* Bu class, div genel arka plan rengini (yukarıdaki "div" seçicisindeki siyahı) geçersiz kılar */
+.seconddiv {
+    background-color: crimson;
+}
